@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 		<title>Viajes Chile</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Viajes Chile">
@@ -13,7 +14,20 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
-		</head>
+
+		<script>
+
+		$(document).ready(function(){
+
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+				return new bootstrap.Tooltip(tooltipTriggerEl)
+			})
+
+		});
+		</script>
+
+</head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark cabecera fixed-top" id="cabecera">
@@ -26,9 +40,9 @@
 		    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		      			<ul class="navbar-nav d-flex">
 		        						<li class="nav-item">	<a class="nav-link active" href="#">Inicio</a> </li>
-		        						<li class="nav-item">	<a class="nav-link" href="#quienessomos">Quienes Somos</a> </li>
-												<li class="nav-item"> <a class="nav-link" href="#destacados">Destacados</a> </li>
-												<li class="nav-item">	<a class="nav-link" href="#contacto">Contacto</a>	</li>
+		        						<li class="nav-item">	<a class="nav-link" href="#quienessomos" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Nuestra historia">Quienes Somos</a> </li>
+												<li class="nav-item"> <a class="nav-link" href="#destacados" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Lugares recomendades">Destacados</a> </li>
+												<li class="nav-item">	<a class="nav-link" href="#contacto" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Como contactarnos">Contacto</a>	</li>
 							  </ul>
 		    		</div>
 						</div>
@@ -70,18 +84,18 @@
 
 	  <div class="col">
 			<div class="icono text-center"><i class="fas fa-plane icono"></i></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
+			<p class="columnaslat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
 
     </div>
 
 	  <div class="col">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
+      <p class="columnascen">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
 			<div class="icono text-center"><i class="fas fa-mountain icono"></i></div>
     </div>
 
 	  <div class="col">
 			<div class="icono text-center"><i class="fas fa-route"></i></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
+      <p class="columnaslat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
 	  </div>
 
   </div>
@@ -159,7 +173,10 @@
 
 						<div class="row">
 								<div class="col"><h2 class="align-middle">VIAJES CHILE</h2></div>
-								<div class="col text-end"><i class="fab fa-github-square botones align-middle"></i>&nbsp;<i class="fab fa-linkedin botones align-middle"></i>&nbsp;<i class="fab fa-twitter-square botones align-middle"></i>&nbsp;<i class="fab fa-facebook-square botones align-middle"></i></div>
+								<div class="col text-end"><i class="fab fa-github-square botones align-middle" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="GitHub"></i>&nbsp;
+									<i class="fab fa-linkedin botones align-middle"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="LinkeIn"></i>&nbsp;
+									<i class="fab fa-twitter-square botones align-middle" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Twitter"></i>&nbsp;
+									<i class="fab fa-facebook-square botones align-middle" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Facebook"></i></div>
 						</div>
 			</div>
 </footer>
