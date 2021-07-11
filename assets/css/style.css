@@ -1,0 +1,36 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+}
+
+.cabecera{
+  background-color: #17a3b8;
+}
+
+hr{
+  color: #17a3b8;
+}
+
+.carrusel{
+  margin-top:3.6rem;
+  margin-bottom: 2rem;
+}
+
+.icono{
+    background-color: #17a3b8;
+    color: white;
+    font-size: 2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.contenedor{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.card{
+  background-color: #17a3b8;
+}

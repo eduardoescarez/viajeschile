@@ -8,14 +8,16 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/5a7bc5f90e.js" crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
 		</head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="cabecera">
+<nav class="navbar navbar-expand-lg navbar-dark cabecera fixed-top" id="cabecera">
 <div class="container">
-
 		    	<a class="navbar-brand" href="#">Viajes Chile <img src="assets/img/viajes.svg" height="30px"></a>
 		    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
 		      <span class="navbar-toggler-icon"></span>
@@ -24,9 +26,9 @@
 		    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		      			<ul class="navbar-nav d-flex">
 		        						<li class="nav-item">	<a class="nav-link active" href="#">Inicio</a> </li>
-		        						<li class="nav-item">	<a class="nav-link" href="#">Quienes Somos</a> </li>
-												<li class="nav-item"> <a class="nav-link" href="#">Destacados</a> </li>
-												<li class="nav-item">	<a class="nav-link" href="#">Contacto</a>	</li>
+		        						<li class="nav-item">	<a class="nav-link" href="#quienessomos">Quienes Somos</a> </li>
+												<li class="nav-item"> <a class="nav-link" href="#destacados">Destacados</a> </li>
+												<li class="nav-item">	<a class="nav-link" href="#contacto">Contacto</a>	</li>
 							  </ul>
 		    		</div>
 						</div>
@@ -37,7 +39,7 @@
 <section>
 <div class="container">
 
-	<div id="carruselfotos" class="carousel slide" data-bs-ride="carousel">
+	<div id="carruselfotos" class="carousel slide carrusel" data-bs-ride="carousel">
 	   	<div class="carousel-inner" role="listbox">
 	    		<div class="carousel-item active"> <img class="d-block w-100" src="assets/img/carousel1.jpg" alt="First slide"> </div>
 	    		<div class="carousel-item"> <img class="d-block w-100" src="assets/img/carousel2.jpg" alt="Second slide"> </div>
@@ -57,28 +59,28 @@
 </section>
 
 
-<section id="informacion">
-<div class="container">
+<section id="quienessomos">
+<div class="container contenedor">
 
-	<h2>Quienes somos</h2>
+	<h2 class="text-center">¿Quienes somos?</h2>
 	<hr>
 
 	<div class="container">
   <div class="row">
 
 	  <div class="col">
-			<i class="fas fa-plane"></i>
+			<div class="icono text-center"><i class="fas fa-plane icono"></i></div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
 
     </div>
 
 	  <div class="col">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
-			<i class="fas fa-mountain"></i>
+			<div class="icono text-center"><i class="fas fa-mountain icono"></i></div>
     </div>
 
 	  <div class="col">
-			<i class="fas fa-route"></i>
+			<div class="icono text-center"><i class="fas fa-route"></i></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non felis sagittis, commodo mi non, tempor quam. Aenean vulputate tincidunt lacinia. Duis molestie erat id convallis lacinia. Aenean finibus dui vitae sem euismod tempus vitae id orci. Morbi a elit sed dui commodo pellentesque ut at tortor. Integer auctor odio ex, nec auctor odio volutpat vitae. Ut pharetra quam nec dui convallis, et dapibus orci condimentum. In hendrerit nec purus eu commodo. Aliquam eget tincidunt lectus. Maecenas condimentum maximus quam id sagittis. Mauris lectus nibh, laoreet ac nibh ut, consectetur faucibus ante. In mollis sollicitudin malesuada. Integer venenatis, erat non interdum dictum, arcu risus dictum purus, ac maximus nibh ante ac urna. Quisque dignissim sapien at nisl pharetra, in interdum orci accumsan. Duis viverra lobortis lectus et imperdiet. In vel eleifend elit. Phasellus nec lorem ex.</p>
 	  </div>
 
@@ -89,19 +91,61 @@
 </section>
 
 <section id="destacados">
-<div class="container">
+<div class="container contenedor">
 
-	<h2>Destacados</h2>
+	<h2 class="text-center">Destacados</h2>
 	<hr>
+
+	<div class="row row-cols-1 row-cols-md-4 g-4">
+	  <div class="col">
+	    <div class="card h-100">
+	      <img src="..." class="card-img-top" >
+	      <div class="card-body">
+	        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+	        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt urna nec felis ultricies, vitae interdum sem euismod. Ut mi lectus, dapibus quis iaculis id, scelerisque a diam.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card h-100">
+	      <img src="..." class="card-img-top" >
+	      <div class="card-body">
+	        <h5 class="card-title">Consectetur adipiscing elit</h5>
+	        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt urna nec felis ultricies, vitae interdum sem euismod. Ut mi lectus, dapibus quis iaculis id, scelerisque a diam.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card h-100">
+	      <img src="..." class="card-img-top" >
+	      <div class="card-body">
+	        <h5 class="card-title">Etiam nec felis vel augue hendrerit </h5>
+	        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt urna nec felis ultricies, vitae interdum sem euismod. Ut mi lectus, dapibus quis iaculis id, scelerisque a diam.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card h-100">
+	      <img src="..." class="card-img-top" >
+	      <div class="card-body">
+	        <h5 class="card-title">Donec sodales in risus</h5>
+	        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt urna nec felis ultricies, vitae interdum sem euismod. Ut mi lectus, dapibus quis iaculis id, scelerisque a diam.</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+</div>
 
 
 </div>
 </section>
 
 <section id="contacto">
-<div class="container">
+<div class="container contenedor">
 
-	<h2>Contacto</h2>
+	<h2 class="text-center">Contacto</h2>
 	<hr>
 
 
