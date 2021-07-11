@@ -1,5 +1,5 @@
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: black;
     color: white;
     font-weight: 400;
@@ -9,8 +9,13 @@ hr{
     color: #17a3b8;
 }
 
+h2{
+    font-weight: 600;
+}
+
 .cabecera{
     background-color: #17a3b8;
+    font-weight: 600;
 }
 
 .carrusel{
@@ -42,5 +47,5 @@ hr{
 }
 
 .botones{
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
