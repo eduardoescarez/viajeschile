@@ -24,6 +24,10 @@
 				return new bootstrap.Tooltip(tooltipTriggerEl)
 			})
 
+			$("#viajeschile").click(function() {
+				alert( "¡Viajes Chile!" );
+				});
+
 		});
 		</script>
 
@@ -32,7 +36,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark cabecera fixed-top" id="cabecera">
 <div class="container">
-		    	<a class="navbar-brand" href="#">Viajes Chile <img src="assets/img/viajes.svg" height="30px"></a>
+		    	<a class="navbar-brand" href="#">Viajes Chile <img src="assets/img/viajes.svg" height="30px" id="viajeschile"></a>
 		    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
 		      <span class="navbar-toggler-icon"></span>
 		    	</button>
@@ -181,6 +185,9 @@
 			</div>
 </footer>
 
+<div class="modal-dialog modal-dialog-centered">
+  <p>papapa</p>
+</div>
 
 </body>
 </html>
